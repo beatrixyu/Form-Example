@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="eng" ,"cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src=""></script>
+</head>
+
+<body>
+    <form action="action.php">
+        <h1>Form Submit</h1>
+        <input type="text">
+        <input type="submit" value="Submit to php/data">
+    </form>
+    <form method="GET">
+        <h1>Form GET</h1>
+        <input type="text" name="username" placeholder="Your name is..." />
+        <input type="submit" value="Submit">
+        <br><br>
+        <input type="email" name="email" placeholder="Your email is..." />
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <form method="GET">
+        <h1>Form Login</h1>
+
+        <label for=username">Username:</label>
+        <input type="text" name="username" placeholder="Your name is..." />
+        <label for="pw">Password:</label>
+        <input type="password" name="pw" placeholder="6 digital + 3 letters...">
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form method="GET">
+        <h1>Form Login-disabled</h1>
+
+        <label for=username">Username:</label>
+        <input type="text" name="username" placeholder="Your name is..." disabled />
+        <label for="pw">Password:</label>
+        <input type="password" name="pw" placeholder="6 digital + 3 letters...">
+        <input type="submit" value="Submit" disabled />
+    </form>
+
+    <form method="GET">
+        <h1>Form Login-fieldset</h1>
+        <fieldset>
+            <legend> Login Information</legend>
+            <label for=username">Username:</label>
+            <input type="text" name="username" placeholder="Your name is..." />
+            <br><br>
+            <label for="pw">Password:</label>
+            <input type="password" name="pw" placeholder="6 digital + 3 letters...">
+            <input type="submit" value="Submit" />
+
+        </fieldset>
+    </form>
+
+    <form method="GET">
+        <h1>Register Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Your name is..." />
+        <br><br>
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="Your username please...">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Your username please...">
+        <br><br>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="Female"> Female <br>
+            <input type="radio" name="gender" value="none"> None <br>
+        </fieldset>
+        <br>
+        <input type="reset" value="Cancel" />
+        <input type="button" value="Click" />
+        <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+    <br>
+    <fieldset>
+        <legend>Gender-checked</legend>
+        <input type="radio" name="gender" value="male" checked> Male <br>
+        <input type="radio" name="gender" value="Female"> Female <br>
+        <input type="radio" name="gender" value="none"> None <br>
+    </fieldset>
+    <br>
+    <input type="reset" value="Cancel" />
+    <input type="submit" value="Submit" />
+    </fieldset>
+    <br><br>
+    <form>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="germany" value="lang" checked> Gemany<br>
+            <input type="checkbox" name="india" value="lang"> India <br>
+            <input type="checkbox" name="china" value="lang"> China <br>
+            <input type="checkbox" name="russia" value="lang"> Russia <br>
+            <input type="checkbox" name="intalia" value="lang"> Italia <br>
+            <input type="checkbox" name="poland" value="lang"> Poland <br>
+            <br>
+            <input type="reset" value="Cancel" />
+            <input type="submit" value="Submit" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Bar choice</legend>
+
+            <label for="tech">Technology:</label>
+            <select name="tech" mutiple size="4">
+                <option value="">Choose your tech favourite</option>
+                <option value="html">Html</option>
+                <option value="css" selected>CSS</option>
+                <option value="php">PHP</option>
+            </select>
+            <br><br>
+            <input type="reset" value="Cancel" />
+            <input type="submit" value="Submit" />
+        </fieldset>
+
+    </form>
+    <form>
+        <label for="message">
+            <h3>Message</h3>
+        </label>
+        <textarea name="message" id="" cols="50" rows="5" maxlength="15"></textarea>
+        <br>
+        <input type="reset" value="Redo" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form>
+        <label for="color">
+            <h3>color</h3>
+        </label>
+        <input type="color" value="color" />
+        <br>
+        <input type="reset" value="Redo" />
+        <input type="submit" value="Submit" />
+    </form>
+    <form>
+        <h3>Quantity</h3>
+
+        <label for="quantity">How many items in the shopping cart </label>
+        <input type="number" name="quantity" min="0" max="10" />
+        <br>
+        <input type="reset" value="Redo" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form>
+        <h3>Rating-range</h3>
+
+        <label for="quality">Rating of our service:</label>
+        <br>
+        1<input type="range" name="quality" min="0" max="10" value="10" />10
+        <br>
+        <input type="reset" value="Redo" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>
+                <h1>search</h1>
+            </legend>
+
+            <label for="search">Looking for...:</label>
+            <br>
+            <input type="text" name="search" value="username" />
+            <input type="email" name="search" value="email" />
+            <input type="number" name="search" value="123" />
+            <br>
+            <br>
+            <input type="reset" value="Redo" />
+            <input type="submit" value="Submit" />
+        </fieldset>
+
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>
+                <h1>Tel number</h1>
+            </legend>
+
+            <label for="phone">Tel:</label>
+            <input type="tel" name="phone" placeholder="+49 712345678" max=9 />
+            <br>
+            <br>
+            <input type="reset" value="Redo" />
+            <input type="submit" value="Submit" />
+        </fieldset>
+
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>
+                <h1>date</h1>
+            </legend>
+
+            <label for="date">Birthday</label>
+            <input type="date" name="date" />
+            <br>
+            <br>
+            <input type="reset" value="Redo" />
+            <input type="submit" value="Submit" />
+        </fieldset>
+
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>
+                <h1>Calendar</h1>
+            </legend>
+
+            <label for="Calendar">Birthday</label>
+            <input type="date" name="date" min="1918-01-01" max="2020-01-01" />
+            <br>
+            <br>
+            <input type="reset" value="Redo" />
+            <input type="submit" value="Submit" />
+        </fieldset>
+
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>
+                <h1>Register Information</h1>
+            </legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Please input your name" maxlength="20" />
+            <br><br>
+            <label for="emalíl">Email:</label>
+            <input type="email" name="email" placeholder="Please input your email" />
+            <br><br>
+            <label for="item">Item:</label>
+            <select name="item" mutiple size="1">
+                <option value="" selected>Choose your items</option>
+                <option value="item1">item 1</option>
+                <option value="item2">item 2</option>
+                <option value="item3">item 3</option>
+            </select>
+            <br><br>
+            <label for="quantity">Items in your shopping cart</label>
+            <input type="number" name="quantity" min="0" max="100" placeholder="items" />
+            <br><br>
+
+            <label for="datetime-local">Required Shipping Date*</label>
+            <select type="number" name="required date" id="myDatetime">
+                <input type="number" name="date" placeholder="DD" max="31" min="01" />
+            </select>
+            <select>
+                <input type="number" name="month" placeholder="MM " max="12" min="01" />
+            </select>
+            <select>
+                <input type="time" name="time" value="11:20 AM" max="59" min="1" />
+            </select>
+
+            <br>
+            <br>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myDatetime").value;
+                    document.getElementById("demo").innerHTML = x;
+                }
+            </script><br><br>
+
+            <label for="datetime-local">Required Shipping Date2*</label>
+            <select name="" id="">
+                <option value="mon">Monday</option>
+                <option value="">Tuesday</option>
+                <option value="">Wednesday</option>
+                <option value="">Thursday</option>
+                <option value="">Friday</option>
+                <option value="Sat">Sat</option>
+                <option value="Sun">Sun</option>
+            </select>
+            <label for="start">Start month:</label>
+
+            <input type="month" id="start" name="start" min="2018-03" value="2019-05">
+            <label for="appt">Choose a time for your shipping:</label>
+
+            <input type="time" id="appt" name="appt" min="9:00" max="18:00" required>
+            <br>
+            <br>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+
+        </fieldset>
+        <br><br>
+        <label for="ice-cream-choice">Choose a flavor:</label>
+        <select><input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" value="Coconut" /></select>
+
+        <datalist id="ice-cream-flavors">
+            <option value="Chocolate">
+            <option value="Coconut">
+            <option value="Mint">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist>
+
+    </form>
+
+
+</body>
+
+</html>
